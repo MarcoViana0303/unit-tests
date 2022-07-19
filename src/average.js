@@ -16,11 +16,7 @@ const average = (param) => {
 let contador = 0;
 for (let index = 0; index < param.length; index += 1) {
   if (typeof param[index] === 'number') {
-    contador = contador + param[index];
-
- {
-    
-  }
+    contador += param[index];
   } else {
     return undefined;
   }
