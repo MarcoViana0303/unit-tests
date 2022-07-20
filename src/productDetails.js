@@ -41,6 +41,8 @@ const productDetails = (firstProduct, secondProduct) => [
     },
   },
 ];
-console.log(typeof productDetails()); 
-
+let array = productDetails();
+for (let i = 0; i < array.length; i += 1) {
+  console.log(Object.values(array[i]));
+}
 module.exports = productDetails;
