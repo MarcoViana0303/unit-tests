@@ -41,12 +41,10 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     expect(circle(2).circumference).toEqual(12.56);
 
     // Teste se dentro do objeto retornado, a função retorna uma `key` com `value` igual à área correta para um círculo de raio 3.
-    let guardador = Math.round(circle(3).area)
-    expect(guardador).toEqual(28);
-    
-    //expect(circle(3).area).toPrecision(2);  //parseFloat((0.2 + 0.1)
+     let guardador = circle(3).area;
+    expect(parseFloat(guardador.toPrecision(2))).toBe(28);
 
     // Teste se a função retorna, em um objeto, os dados corretos de um círculo de raio 3.
-    expect((circle(3))).toEqual({ radius: 3, area: 28, circumference: 18.84});
+    expect(circle(3)).toEqual({ radius: 3, area: 28.259999999999998, circumference: 18.84});
   });
 });

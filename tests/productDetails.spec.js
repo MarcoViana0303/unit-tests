@@ -38,7 +38,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
       expect(typeof productDetails).toBe('function')
 
     // Teste se o retorno da função é um array.
-      expect()
+      expect(typeof productDetails('Álcool gel', 'Máscara')).toBe('object');
 
     // Teste se o array retornado pela função contém dois itens dentro.
 
